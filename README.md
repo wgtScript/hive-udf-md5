@@ -15,7 +15,7 @@ mvn clean install
 
 ```
 hive> ADD JAR /tmp/hive-udf-md5-1.0-SNAPSHOT-jar-with-dependencies.jar;
-hive> CREATE TEMPORARY FUNCTION md5enc as ‘com.jwszol.Md5enc’;
+hive> CREATE TEMPORARY FUNCTION md5enc as 'com.jwszol.Md5enc';
 hive> select md5enc(column_name) from testing_table;
 ```
 
